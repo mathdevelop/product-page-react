@@ -1,0 +1,192 @@
+{
+	"categories": [
+		{
+			"id": 1,
+			"name": "Sapatos"
+		},
+		{
+			"id": 2,
+			"name": "Bolsas"
+		},
+		{
+			"id": 3,
+			"name": "Acessórios"
+		},
+		{
+			"id": 4,
+			"name": "Off"
+		}
+	],
+	"products": [
+		{
+			"id": 1,
+			"name": "Rasteira Tira Dedo",
+			"sku": "RT 0568 | 03.07.0653",
+			"category": 1,
+			"price": 69,
+			"promotional_price": 55.2,
+			"installment": {
+				"plots": 6,
+				"value": 9.2
+			},
+			"variations": [
+				{
+					"type": "color",
+					"attributes": [
+						{
+							"name": "Fucsia",
+							"value": "#a9095e"
+						},
+						{
+							"name": "Chathams Blue",
+							"value": "#2a5a75"
+						},
+						{
+							"name": "Rock Spray",
+							"value": "#a14830"
+						},
+						{
+							"name": "Black",
+							"value": "#000"
+						}
+					]
+				},
+				{
+					"type": "size",
+					"attributes": [33, 34, 35, 36, 37, 38, 39, 40, 41, 42]
+				}
+			],
+			"images": [
+				"rasteira-tira-dedo-01.png",
+				"rasteira-tira-dedo-02.png",
+				"rasteira-tira-dedo-03.png",
+				"rasteira-tira-dedo-04.png",
+				"rasteira-tira-dedo-05.png"
+			],
+			"video": "https://www.youtube.com/watch?v=eL3VAIwSkQ0",
+			"description": "Rasteira em atanado soft com tira no dedo e fechamento de fivela. Possui sola sempre na cor do cabedal.",
+			"related": [2, 3, 4, 5, 6]
+		},
+		{
+			"id": 2,
+			"name": "Produto #2",
+			"price": 204.9,
+			"variations": [
+				{
+					"type": "color",
+					"attributes": [
+						{
+							"name": "Fucsia",
+							"value": "#a9095e"
+						},
+						{
+							"name": "Chathams Blue",
+							"value": "#2a5a75"
+						},
+						{
+							"name": "Rock Spray",
+							"value": "#a14830"
+						},
+						{
+							"name": "Black",
+							"value": "#000"
+						}
+					]
+				}
+			],
+			"images": [
+				"produto-02-01.png"
+			]
+		},
+		{
+			"id": 3,
+			"name": "Produto #3",
+			"price": 204.9,
+			"variations": [
+				{
+					"type": "color",
+					"attributes": [
+						{
+							"name": "Fucsia",
+							"value": "#a9095e"
+						},
+						{
+							"name": "Chathams Blue",
+							"value": "#2a5a75"
+						},
+						{
+							"name": "Rock Spray",
+							"value": "#a14830"
+						},
+						{
+							"name": "Black",
+							"value": "#000"
+						}
+					]
+				}
+			],
+			"images": [
+				"produto-03-01.png"
+			]
+		},
+		{
+			"id": 4,
+			"name": "Produto #4",
+			"price": 204.9,
+			"variations": [],
+			"images": [
+				"produto-04-01.png"
+			]
+		},
+		{
+			"id": 5,
+			"name": "Produto #5",
+			"price": 204.9,
+			"variations": [
+				{
+					"type": "color",
+					"attributes": [
+						{
+							"name": "Chathams Blue",
+							"value": "#2a5a75"
+						},
+						{
+							"name": "Rock Spray",
+							"value": "#a14830"
+						},
+						{
+							"name": "Black",
+							"value": "#000"
+						}
+					]
+				}
+			],
+			"images": [
+				"produto-05-01.png"
+			]
+		},
+		{
+			"id": 6,
+			"name": "Produto #6",
+			"price": 204.9,
+			"variations": [
+				{
+					"type": "color",
+					"attributes": [
+						{
+							"name": "Fucsia",
+							"value": "#a9095e"
+						},
+						{
+							"name": "Chathams Blue",
+							"value": "#2a5a75"
+						}
+					]
+				}
+			],
+			"images": [
+				"produto-06-01.png"
+			]
+		}
+	]
+}

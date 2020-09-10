@@ -1,0 +1,67 @@
+@import "variables.scss";
+
+:focus {
+    outline: none;
+}
+
+html,
+body,
+#root,
+#app {
+    height: 100%;
+}
+
+body {
+    font-family: $font;
+    font-size: 12px;
+    line-height: 28px;
+    overflow-x: hidden;
+    color: $color4;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    outline: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    padding: 0;
+    border: 0;
+    background: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+#app {
+    &.open {
+        overflow: hidden;
+
+        &:before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(32, 32, 32, 0.6);
+            z-index: 1;
+        }
+    }
+}

@@ -1,0 +1,147 @@
+@import "../../variables.scss";
+
+#orig-header {
+    #logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 86px;
+    }
+
+    #menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        padding: 0 40px;
+        border: 1px solid #ccc;
+
+        #links {
+            a {
+                color: $color4;
+
+                &:not(:first-child) {
+                    margin-left: 15px;
+
+                    &:before {
+                        content: '|';
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+
+        #open {
+            display: none;
+        }
+
+        #categories {
+            .category {
+                display: inline-block;
+
+                &:not(:first-child) {
+                    margin-left: 100px; 
+                }
+    
+                a {
+                    font-size: 14px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    color: $color4;
+                }
+            }
+        }
+
+        #actions {
+            > div {
+                display: inline-block;
+
+                &:not(:first-child) {
+                    margin-left: 30px;
+                }
+            }
+        }
+
+        #search {
+            form {
+                position: relative;
+
+                input {
+                    width: 80px;
+                    border: 0;
+                    border-bottom: 1px solid rgba(104, 104, 104, 0.4);
+                    text-align: right;
+                }
+                
+                button {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+        }
+        
+        #cart {
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    @media (max-width: $lg) {
+        #menu {
+            #categories {
+                .item {
+                    &:not(:first-child) {
+                        margin-left: 10px; 
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: $md) {
+        margin-bottom: 70px;
+
+        #logo {
+            height: 60px;
+        }
+
+        #menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            padding: 0 15px;
+            border: 0;
+
+            #links,
+            #categories {
+                display: none;
+            }
+
+            #open {
+                display: block;
+            }
+
+            #actions {
+                > div:not(:first-child) {
+                    margin-left: 15px;
+                }
+            }
+
+            #search {
+                form {
+                    input {
+                        display: none;
+                    }
+
+                    button {
+                        position: static;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,235 @@
+@import "../../variables.scss";
+
+#orig-footer {
+    position: relative;
+    border-top: 2px solid #aeb6c1;
+
+    #row-1 {
+        padding: 20px 40px;
+    }
+
+    #row-2 {
+        padding: 0 40px 40px;
+    }
+
+    .column {
+        float: left;
+        width: 20%;
+
+        h2 {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $color3;
+        }
+
+        a {
+            font-size: 14px;
+            color: $color2;
+        }
+    }
+
+    #social {
+        svg {
+            margin-left: 30px;
+        }
+    }
+
+    #seals {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        img {
+            margin-left: 30px;
+        }
+    }
+
+    #newsletter {
+        position: absolute;
+        top: -105px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 290px;
+        height: 290px;
+        border: 2px solid #aeb6c1;
+        border-radius: 100%;
+        background-color: #fff;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 26px;
+            text-transform: uppercase;
+            color: $color2;
+        }
+
+        label {
+            display: block;
+            margin: 0;
+            line-height: 18px;
+            color: rgba(32, 32, 32, 0.5)
+        }
+
+        input {
+            display: block;
+            padding: 0;
+            border: 0;
+            border-bottom: 2px solid #aeb6c1;
+            font-size: 14px;
+            line-height: 20px;
+            color: $color2;
+        }
+
+        #name {
+            &::placeholder {
+                color: $color2;
+            }
+        }
+
+        #email {
+            margin: 30px 0;
+        }
+
+        button {
+            display: block;
+            width: 110px;
+            margin: 0 auto;
+            border-radius: 3px;
+            background-color: $color1;
+            font-size: 14px;
+            line-height: 50px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+
+    #copyright {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+        padding: 0 130px;
+        background-color: $color1;
+
+        span {
+            max-width: 730px;
+            line-height: 18px;
+            color: #fff;
+        }
+
+        svg {
+            width: 110px;
+            height: auto;
+            
+            path {
+                fill: #fff;
+            }
+        }
+    }
+
+    @media (max-width: $md) {
+        .column {
+            width: 100%;
+            padding: 0 15px;
+            border-bottom: 1px solid rgba(174, 182, 193, .4);
+
+            &:first-child {
+                position: absolute;
+                left: 50%;
+                top: 185px;
+                width: auto;
+                border: 0;
+                transform: translateX(-50%);
+            }
+
+            &:last-child {
+                padding-top: 160px;
+            }
+
+            h2 {
+                margin: 0;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 36px;
+
+                &:before {
+                    content: '+';
+                    float: right;
+                    font-size: 16px;
+                }
+
+                + ul {
+                    display: none;
+                }
+            }
+        }
+
+        #row-1 {
+            position: absolute;
+            left: 50%;
+            top: 130px;
+            padding: 0;
+            transform: translateX(-50%);
+        }
+
+        #row-2 {
+            padding: 0;
+        }
+
+        #social {
+            svg {
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        #seals {
+            img {
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        #newsletter {
+            position: static;
+            display: block;
+            width: auto;
+            height: auto;
+            border: 0;
+
+            h3 {
+                font-weight: 400;
+                text-align: center;
+                color: $color3;
+            }
+
+            #name {
+                width: 100%;
+            }
+
+            #email {
+                float: left;
+                width: calc(100% - 130px);
+            }
+
+            button {
+                float: right;
+                margin-top: 10px;
+                line-height: 40px;
+            }
+        }
+
+        #copyright {
+            flex-direction: column;
+            height: 175px;
+            padding: 15px;
+        }
+    }
+}

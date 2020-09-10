@@ -1,0 +1,79 @@
+@import "../../variables.scss";
+
+#orig-lightbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 445px;
+    padding: 50px 70px 20px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    .clear {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .title {
+        margin: 10px 0;
+        font-size: 22px;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color1;
+    }
+
+    .actions {
+        button {
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .open {
+            margin-bottom: 10px;
+            border-radius: 3px;
+            background-color: $color5;
+            line-height: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .continue {
+            line-height: 20px;
+            text-decoration: underline;
+            color: $color3;
+        }
+    }
+
+    @media (max-width: $md) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 50px;
+
+        .image {
+            margin: 10px 0;
+            order: 2;
+        }
+
+        .title {
+            margin: 0;
+            font-size: 16px;
+            line-height: 23px;
+            order: 1;
+        }
+
+        .actions {
+            order: 3;
+        }
+    }
+}
